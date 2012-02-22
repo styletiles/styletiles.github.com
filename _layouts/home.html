@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+{% include open.html %}
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+
+    <article role="main">
+        {{ content }}
+    </article>
+    <aside>
+        <section id="gallery">
+            <header>
+                <h2>Gallery</h2>
+                <p>Examples of style tiles in practice.</p>
+            </header>
+            <ul>
+                <li>
+                    <img src="" alt="" /> + <img src="" alt="" /> = <img src="" alt="" />
+                </li>
+                <li>
+                    <img src="" alt="" /> + <img src="" alt="" /> = <img src="" alt="" />
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <footer>
+        {% include footer.html %}
+    </footer>
+    </div>
+
+    {% include close.html %}
+
+</body>
+</html>
