@@ -1,0 +1,37 @@
+/**
+ * colors:
+ * - gray text: #cad1d9
+ * - green text: #a2af46
+ * - dark blue text: #405b6c
+ * - gray heading: #8c969f
+ * - light blue heading: #337ca9
+ * - body text: #232425
+ * - blue bg: #8d97a1 rgba(141,151,161,1)
+ * - gray bg: #e3e3e3
+ */
+
+body{
+    background:#f7f6fc url(../img/bg_graph.png) repeat 50% 50%;
+    font:normal 14px 'Proxima Nova', 'Helvetica Neue', 'Helvetica', arial, sans-serif;
+}
+
+/* top bar */
+#topbar{padding:0.5em 2em;
+    background-image: -webkit-linear-gradient(left , rgba(141,151,161,0.8) 0%, rgb(141,151,161) 40%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
+    background-image:    -moz-linear-gradient(left , rgba(141,151,161,0.8) 0%, rgb(141,151,161) 40%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
+    background-image:     -ms-linear-gradient(left , rgba(141,151,161,0.8) 0%, rgb(141,151,161) 40%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
+    background-image:      -o-linear-gradient(left , rgba(141,151,161,0.8) 0%, rgb(141,151,161) 40%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
+    background-image:         linear-gradient(left , rgba(141,151,161,0.8) 0%, rgb(141,151,161) 40%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0, rgba(141,151,161,0.8)),
+        color-stop(0.4, rgb(141,151,161)),
+        color-stop(0.65, rgb(141,151,161)),
+        color-stop(1, rgba(141,151,161,0.85))
+    );
+}
+#topbar ul{margin:0;padding:0;list-style:none outside;}
+#topbar ul li.last{float:right;font-size: 13px;}
+#topbar a{color:#cad1d9;}
