@@ -10,36 +10,24 @@
 
 <body>
     <div class="container">
+    {% include topbar.html %}
+
     <header>
-        {% include topbar.html %}
-        <h1>{{ page.title }}</h1>
-        <p>A Visual Web Design Process <em>for</em> Clients &amp; the Responsive Web</p>
+        <img src="/img/temp_banner.png" alt="DELETE ME PLEASE" style="padding:1em 0;" />
+        <!-- <h1>{{ page.title }}</h1>
+        <p>A Visual Web Design Process <em>for</em> Clients &amp; the Responsive Web</p> -->
     </header>
 
     <article role="main">
         {{ content }}
     </article>
-    <aside>
-        <section id="gallery">
-            <header>
-                <h2>Gallery</h2>
-                <p>Examples of style tiles in practice.</p>
-            </header>
-            <ul>
-                <li>
-                    <img src="" alt="" /> + <img src="" alt="" /> = <img src="" alt="" />
-                </li>
-                <li>
-                    <img src="" alt="" /> + <img src="" alt="" /> = <img src="" alt="" />
-                </li>
-            </ul>
-        </section>
-    </aside>
+    </div>
 
     <footer>
+        <div class="container">
         {% include footer.html %}
+        </div>
     </footer>
-    </div>
 
     {% include close.html %}
 
