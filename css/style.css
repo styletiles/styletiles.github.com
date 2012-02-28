@@ -34,7 +34,8 @@ section aside { margin:20px 0 20px; }
 
 /* big grey pull-out */
 aside blockquote { color:#8c969f; font-size:28px; line-height:1.25em; text-align:center; border-left:none; padding:0 2.5em; font-weight:600; }
-
+aside blockquote p { font-size:28px; line-height:1.25em; font-weight:600; }
+aside blockquote p:last-child { margin-bottom:0; }
 /* bump down top below fixed header */
 .container>header { margin-top:30px; }
 
