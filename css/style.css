@@ -52,11 +52,12 @@ aside blockquote p:last-child { margin-bottom:0; }
     background-image: -webkit-gradient(linear,left top,right top,color-stop(0, rgba(141,151,161,0.8)),color-stop(0.4, rgb(141,151,161)),color-stop(0.65, rgb(141,151,161)),color-stop(1, rgba(141,151,161,0.85));
     );
 }
-#topbar ul li { text-transform:uppercase; font-size: 13px; line-height:16px; text-shadow:0 0 1px rgba(255,255,255,0.5), 0 1px 1px rgba(0,0,0,0.1); }
+#topbar ul li { text-transform:uppercase; font-size: 13px; line-height:16px; text-shadow:0 0 1px rgba(255,255,255,0.5), 0 1px 1px rgba(0,0,0,0.1); float:left; margin-right:2em; }
 #topbar ul li.last { float:right; }
 #topbar ul li img {vertical-align:text-top;}
 #topbar a { color:#cad1d9; }
-#topbar a:hover { text-decoration:none; color:#ddd;  }
+#topbar a:hover { text-decoration:none; color:#efefef;  }
+#topbar a.active { color:#fbfbfb; }
 
 #when p.span12 { margin-bottom:2em; }
 
@@ -149,13 +150,15 @@ cite { text-align:center; margin:1em; display:block; font-size:14px; line-height
     #steps ol>li header {margin-left: 100px; margin-top:24px; }
     #steps ol>li#listen { position:relative; }
     #steps ol>li#listen li.span3 { float:left; width:50%; }
-    #steps ol>li#listen .no-mobile { display:none; }
     #steps ol>li#interpret li { display:block; width:50%; float:left; }
     #steps ol>li#interpret ul { padding-bottom:1em }
     #steps ol>li#interpret h4 { clear:left; }
     .first { clear:none; }
+    .no-mobile { display:none; }
     aside blockquote {padding: 0 0.5em}
     body>footer .overlap.span5 { margin-bottom:1em; }
+    #examples li.span3 { float:left; max-width:48%; margin-bottom:1em; }
+    #examples li.span3:nth-child(even) { float:right; }
 }
 
 /* utility classes */
