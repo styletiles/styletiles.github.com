@@ -52,7 +52,7 @@ aside blockquote p:last-child { margin-bottom:0; }
     background-image: -webkit-gradient(linear,left top,right top,color-stop(0, rgba(141,151,161,0.8)),color-stop(0.4, rgb(141,151,161)),color-stop(0.65, rgb(141,151,161)),color-stop(1, rgba(141,151,161,0.85));
     );
 }
-#topbar ul li { text-transform:uppercase; font-size: 13px; }
+#topbar ul li { text-transform:uppercase; font-size: 13px; line-height:16px; text-shadow:0 0 1px rgba(255,255,255,0.5), 0 1px 1px rgba(0,0,0,0.1); }
 #topbar ul li.last { float:right; }
 #topbar ul li img {vertical-align:text-top;}
 #topbar a { color:#cad1d9; }
