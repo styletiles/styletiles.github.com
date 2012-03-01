@@ -17,12 +17,12 @@
 body { background:#f7f6fc url(../img/bg_graph.png) repeat 50% 0; font:400 16px/1 'proxima-nova', 'Helvetica Neue', helvetica, arial, sans-serif; }
 p { font-size: 16px; line-height:1.4em; margin:0 0 1.5em; font-family:'proxima-nova', 'Helvetica Neue', helvetica, arial, sans-serif; }
 p.kludgy { padding-right:16px; }
-a, a:visited { color:#405b6c; }
+a, a:visited, a:hover { color:#415c6c; }
 section { clear:both;padding-bottom:40px; }
 h1, h2, h3, h4 { text-transform:uppercase;line-height:1.1em; }
 h2 { font-size:28px; color:#324a57; font-weight:600; text-align:center; margin-bottom:12px; }
 h3 { font-size:44px; color:#337ca9; text-transform:none; margin-bottom:12px; }
-h4 { font-size:18px; color:#405b6c; font-weight:500; margin:3px 0 6px; }
+h4 { font-size:18px; color:#405b6c; text-transform:none; font-weight:500; margin:3px 0 6px; }
 ul, ol { list-style:none outside;margin:0;padding:0 }
 ul>li { font-size:16px; line-height:1.5em; }
 
@@ -55,11 +55,12 @@ aside blockquote { color:#8c969f; font-size:28px; line-height:1.25em; text-align
 aside blockquote p { font-size:28px; line-height:1.25em; font-weight:600; }
 aside blockquote p:last-child { margin-bottom:0; }
 /* bump down top below fixed header */
-.container>header { margin-top:30px; background:transparent url(../img/header.png) no-repeat 50% 0; height:235px; }
-
+.container>header { margin-top:20px; background:transparent url(../img/header.png) no-repeat 50% 0; height:235px; position:relative; z-index:1040; }
+.scrolled .container>header { z-index: 1; }
 /* top bar */
 #topbar {
 /*    max-width:920px;left:50%;margin-left:-480px;*/
+    position:absolute;
     padding:0.5em 20px;
     *background-color:#8d97a1;
     background-image: -webkit-linear-gradient(left , rgba(141,151,161,0.78) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
@@ -67,9 +68,10 @@ aside blockquote p:last-child { margin-bottom:0; }
     background-image:     -ms-linear-gradient(left , rgba(141,151,161,0.78) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
     background-image:      -o-linear-gradient(left , rgba(141,151,161,0.78) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
     background-image:         linear-gradient(left , rgba(141,151,161,0.78) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
-    background-image: -webkit-gradient(linear,left top,right top,color-stop(0, rgba(141,151,161,0.8)),color-stop(0.4, rgb(141,151,161)),color-stop(0.65, rgb(141,151,161)),color-stop(1, rgba(141,151,161,0.85));
-    );
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(0, rgba(141,151,161,0.8)),color-stop(0.4, rgb(141,151,161)),color-stop(0.65, rgb(141,151,161)),color-stop(1, rgba(141,151,161,0.85)););
 }
+.scrolled #topbar { position:fixed; top:-30px; }
+.trigger-menu #topbar { top:0; }
 #topbar ul li { text-transform:uppercase; font-size: 13px; line-height:16px; text-shadow:0 0 1px rgba(255,255,255,0.5), 0 1px 1px rgba(0,0,0,0.1); float:left; margin-right:2em; }
 #topbar ul li.last { float:right; }
 #topbar ul li img {vertical-align:text-top;}
@@ -113,7 +115,7 @@ a.button:hover { text-decoration:none !important; border-color:#879337;
 body>footer { background:#707c8a; color:#fbfffe; padding: 2em 0; }
 body>footer p { font-weight:300; font-size:14px; line-height:1.5em; }
 body>footer a, body>footer a:hover, body>footer a:visited { color:#fff; text-decoration:none; }
-body>footer a:hover { color:#fff; text-decoration:underline; }
+body>footer a:hover { color:#415c6c; text-decoration:underline; }
 body>footer img.pull-left { margin-right:1em; border:3px solid #fff; margin-bottom:30px; margin-top:5px; }
 body>footer .overlap { background:#45718a;
     -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.3);
@@ -122,8 +124,8 @@ body>footer .overlap { background:#45718a;
          -o-box-shadow: 0 0 2px rgba(0,0,0,0.3);
             box-shadow: 0 0 2px rgba(0,0,0,0.3);
 }
-body>footer h4 { color:#fff; }
-body>footer .overlap h4 { margin-top:0; text-transform:uppercase; padding-bottom:1em; margin-bottom:1em; border-bottom:3px dotted #405d6b; color: #fff; }
+body>footer h4 { color:#fff; text-transform:uppercase; }
+body>footer .overlap h4 { margin-top:0; padding-bottom:1em; margin-bottom:1em; border-bottom:3px dotted #405d6b; color: #fff; }
 body>footer .overlap div.wrap { padding:2em 1em 1em; }
 body>footer .boxy { background-color:#7e8894; }
 body>footer .boxy:last-child { background: #7e8894 url(../img/bg_tiles_watermark.png) no-repeat right 2px; }

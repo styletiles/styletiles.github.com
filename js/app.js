@@ -13,7 +13,7 @@
     // scrolling
     var nav = $('#topbar') // nav element
       , navY = nav.offset().top // default position
-      , navHeight = nav.height() * 2.5 // nav height for calculating offsets
+      , navHeight = nav.height() * 2 // nav height for calculating offsets
       , navLinks = nav.find('a[href^="#"]') // on-page links in nav
       , pageHeight = $('body').height()
       , sections = $('article[role=main]').find('section').reverse() // reversed set of nav sections
@@ -22,9 +22,11 @@
           scrollPos = $(this).scrollTop();
           // get the active nav item
           navLinks.removeClass('active');
-          if(scrollPos == 0){
+          if(scrollPos < 30){
             $('a[href=#top]').addClass('active');
+            $('body').removeClass('scrolled');
           }else{
+            $('body').addClass('scrolled');
             sections.each(function(){
               if(scrollPos + navHeight >= $(this).offset().top){
                 navLinks.filter('a[href=#' + $(this).attr('id') + ']').addClass('active');
@@ -57,6 +59,13 @@
           .load(function(){
             navY = nav.offset().top;
             pageHeight = $('body').height();
+          })
+          .mousemove(function(evt){
+            if(evt.clientY < 30){
+              $('body').addClass('trigger-menu');
+            }else{
+              $('body').removeClass('trigger-menu');
+            }
           });
 
   });
