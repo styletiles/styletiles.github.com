@@ -45,12 +45,12 @@ aside blockquote p:last-child { margin-bottom:0; }
     position:absolute;
     padding:0.5em 20px;
     *background-color:#8d97a1;
-    background-image: -webkit-linear-gradient(left , rgba(141,151,161,0.78) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
-    background-image:    -moz-linear-gradient(left , rgba(141,151,161,0.78) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
-    background-image:     -ms-linear-gradient(left , rgba(141,151,161,0.78) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
-    background-image:      -o-linear-gradient(left , rgba(141,151,161,0.78) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
-    background-image:         linear-gradient(left , rgba(141,151,161,0.78) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.85) 100%);
-    background-image: -webkit-gradient(linear,left top,right top,color-stop(0, rgba(141,151,161,0.8)),color-stop(0.4, rgb(141,151,161)),color-stop(0.65, rgb(141,151,161)),color-stop(1, rgba(141,151,161,0.85)););
+    background-image: -webkit-linear-gradient(left , rgba(141,151,161,0.9) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.92) 100%);
+    background-image:    -moz-linear-gradient(left , rgba(141,151,161,0.9) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.92) 100%);
+    background-image:     -ms-linear-gradient(left , rgba(141,151,161,0.9) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.92) 100%);
+    background-image:      -o-linear-gradient(left , rgba(141,151,161,0.9) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.92) 100%);
+    background-image:         linear-gradient(left , rgba(141,151,161,0.9) 0%, rgb(141,151,161) 50%, rgb(141,151,161) 65%, rgba(141,151,161,0.92) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(0, rgba(141,151,161,0.9)),color-stop(0.4, rgb(141,151,161)),color-stop(0.65, rgb(141,151,161)),color-stop(1, rgba(141,151,161,0.92)););
 }
 .scrolled #topbar { position:fixed; top:-30px; }
 .trigger-menu #topbar { top:0; }
