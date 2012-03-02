@@ -1,0 +1,40 @@
+/**
+ __ _         _        _____ _ _
+/ _\ |_ _   _| | ___  /__   (_) | ___  ___
+\ \| __| | | | |/ _ \   / /\/ | |/ _ \/ __|
+_\ \ |_| |_| | |  __/  / /  | | |  __/\__ \
+\__/\__|\__, |_|\___|  \/   |_|_|\___||___/
+        |___/
+
+*/
+
+
+/* TEAM */
+
+    Content: Samantha Warren
+    Twitter: @samanthatoy
+    URL: http://badassideas.com
+    Location: San Francisco, California
+
+
+/* THANKS */
+
+    Illustrations: Garrett Miller
+    Twitter: @heyitsgarrett
+    URL: http://heyitsgarrett.com
+    Location: Washington, D.C.
+
+    Site Development: Dan Drinkard
+    Twitter: @dandrinkard
+    URL: http://dandrinkard.me
+    Location: Arlington, Virgina
+
+    Copy Editing: Shawn Mole
+    Twitter: @shawnmole
+
+/* SITE */
+
+    Last Update: 2012/03/01
+    Language: English
+    Doctype: HTML5
+    Platform: Ruby, Jekyll, Github Pages
