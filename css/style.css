@@ -175,8 +175,8 @@ cite { text-align:center; margin:1em; display:block; font-size:14px; line-height
 
 /* mobile */
 @media (max-width:767px) {
-    #topbar { max-width:100%; margin-left:0; left:0; width:100%; position:absolute; padding:0.5em 10px; }
-    #topbar a { line-height:30px; }
+    #topbar { max-width:100%; margin-left:0; left:0; padding:0.5em 10px; }
+    #topbar a { line-height:40px; }
     .scrolled #topbar { position:fixed; top:0px; }
     #topbar ul li { margin-right: 1em; }
     .container>header { height:auto; background-image:none; text-align:center; text-indent:0; }
