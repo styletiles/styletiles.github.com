@@ -68,5 +68,10 @@
             }
           });
 
+      // $(window).resize(function(){
+      //   var ch = $('.container>header')
+      //   ch.css('background-image', ch.css('background-image'));
+      // });
+
   });
 })(jQuery);

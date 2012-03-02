@@ -13,8 +13,9 @@
     {% include topbar_home.html %}
 
     <header class="ir">
-        <h1>{{ page.title }}</h1>
-        <p>A Visual Web Design Process <em>for</em> Clients &amp; the Responsive Web</p>
+        <h1 class="no-mobile">{{ page.title }}</h1>
+        <p class="no-mobile">A Visual Web Design Process <em>for</em> Clients &amp; the Responsive Web</p>
+        <img src="/img/header_mobile.png" alt="alternate banner" class="mobile-only" />
     </header>
 
     <article role="main">

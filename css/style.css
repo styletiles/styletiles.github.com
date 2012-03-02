@@ -166,6 +166,7 @@ cite { text-align:center; margin:1em; display:block; font-size:14px; line-height
 
 /* low-res desktop */
 @media (min-width:767px) and (max-width:980px) {
+    .container>header { margin-top:23px; height:200px; }
     #topbar { max-width:100%; margin-left:0; left:0; position:fixed; }
     #steps ol>li { background-position: -8px 0; }
     #steps ol>li header h3 { text-indent:0.25em; }
@@ -174,8 +175,10 @@ cite { text-align:center; margin:1em; display:block; font-size:14px; line-height
 
 /* mobile */
 @media (max-width:767px) {
-    #topbar { max-width:100%; margin-left:0; left:0; position:absolute; }
-    .container>header { width:380px; height:100px; margin: 22px auto; }
+    #topbar { max-width:100%; margin-left:0; left:0; position:fixed; }
+    .scrolled #topbar { position:fixed; top:0px; }
+    .container>header { height:auto; background:none; text-align:center; text-indent:0; }
+    .navbar li.last { margin-left: -100px; }
     #steps ol>li { background-position: -76px 0; }
     #steps ol>li header {margin-left: 100px; margin-top:24px; }
     #steps ol>li#listen { position:relative; }
@@ -184,11 +187,15 @@ cite { text-align:center; margin:1em; display:block; font-size:14px; line-height
     #steps ol>li#interpret ul { padding-bottom:1em }
     #steps ol>li#interpret h4 { clear:left; }
     .first { clear:none; }
-    .no-mobile { display:none; }
+    .no-mobile { display:none !important; }
     aside blockquote {padding: 0 0.5em}
     body>footer .overlap.span5 { margin-bottom:1em; }
     #examples li.span3 { float:left; max-width:48%; margin-bottom:1em; }
     #examples li.span3:nth-child(even) { float:right; }
+    body>footer .boxy:last-child { background-image:none; }
+    body>footer img.pull-left { margin-bottom:40px; }
+    .row.boxy > p[class*="span"], .row.boxy > h4[class*="span"] { margin-bottom: 1em; }
+
 }
 
 /* utility classes */
@@ -235,3 +242,4 @@ cite { text-align:center; margin:1em; display:block; font-size:14px; line-height
 @media (max-width:767px){
 .row.boxy>[class*="span"]{float:none;display:block;width:auto;margin:0;}
 }
+.mobile-only {display:none;} @media (max-width:767px){ .mobile-only { display: inline; } }
