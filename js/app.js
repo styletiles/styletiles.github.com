@@ -52,11 +52,7 @@
           // goal is to feel as 'proportional' as possible without actual linearity
           // this is based on a 1s scroll time for the whole page, adjust as needed
           $(window).scrollTo(destination, Math.sqrt(distance) * 1000, {
-            easing: 'swing',
-            onAfter: function(){
-                        // this makes ios happy.
-                        $('#topbar').css('z-index', 9999);
-                     }
+            easing: 'swing'
             });
         });
 
