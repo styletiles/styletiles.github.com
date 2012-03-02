@@ -8,7 +8,6 @@
         , 'transitionIn': 'elastic'
         , 'transitionOut': 'elastic'
       });
-    }
 
     // scrolling
     var nav = $('#topbar') // nav element
@@ -35,6 +34,7 @@
             });
           }
         });
+
         // scrollTo on nav click
         navLinks.click(function(e){
           e.preventDefault();
@@ -50,7 +50,13 @@
           // otherwise, short distances will appear to scroll too fast, long ones too slowly
           // goal is to feel as 'proportional' as possible without actual linearity
           // this is based on a 1s scroll time for the whole page, adjust as needed
-          $(window).scrollTo(destination, Math.sqrt(distance) * 1000, {easing: 'swing'});
+          $(window).scrollTo(destination, Math.sqrt(distance) * 1000, {
+            easing: 'swing',
+            onAfter: function(){
+                        // this makes ios happy.
+                        $('#topbar').css('z-index', 9999);
+                     }
+            });
         });
 
         //set active state on domready
@@ -67,11 +73,7 @@
               $('body').removeClass('trigger-menu');
             }
           });
-
-      // $(window).resize(function(){
-      //   var ch = $('.container>header')
-      //   ch.css('background-image', ch.css('background-image'));
-      // });
+    }
 
   });
 })(jQuery);
