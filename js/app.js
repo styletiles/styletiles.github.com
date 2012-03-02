@@ -3,6 +3,7 @@
 
     // fancybox
     if($(window).width() >= 768){
+
       $('a.thumb[href$=.png], a.thumb[href$=.jpg], a.thumb[href$=.gif]').fancybox({
           'titleShow': false
         , 'transitionIn': 'elastic'
@@ -73,7 +74,7 @@
               $('body').removeClass('trigger-menu');
             }
           });
-    }
+    } // window constraint
 
   });
 })(jQuery);
