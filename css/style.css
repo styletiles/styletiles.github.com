@@ -94,8 +94,8 @@ a.button:hover{text-decoration:none !important;border-color:#879337;
        -o-box-shadow: inset 0 0 32px rgba(0,0,0,0.08);
           box-shadow: inset 0 0 32px rgba(0,0,0,0.08);
 }
-#what a.button span.download{background:transparent url(../img/glyphicons_download_small.png) no-repeat 0 0;width:16px;height:16px;display:inline-block;*display:inline;position:relative;top:1px;}
-#steps ol>li#define a.button span.download{background:transparent url(../img/glyphicons_download.png) no-repeat 0 0;width:26px;height:26px;display:inline-block;*display:inline;position:relative;top:-4px;margin-bottom:-4px;}
+#what a.button span.download{background:transparent url(../img/glyphicons_download_small.png) no-repeat 0 0;width:16px;height:16px;display:inline-block;*display:inline;position:relative;top:-2px;vertical-align:middle;}
+#steps ol>li#define a.button span.download{background:transparent url(../img/glyphicons_download.png) no-repeat 0 0;width:26px;height:26px;display:inline-block;*display:inline;position:relative;top:-4px;margin-bottom:-4px;vertical-align:middle;}
 #steps ol>li#iterate{background-image:url(../img/step_4.png);}
 #steps ol>li#iterate .row .span4{margin-top:1em;}
 body>footer{background:#707c8a;color:#fbfffe;padding:2em 0;}
