@@ -34,7 +34,7 @@ _\ \ |_| |_| | |  __/  / /  | | |  __/\__ \
 
 /* SITE */
 
-    Last Update: 2012/03/01
+    Last Update: 2012/07/17
     Language: English
     Doctype: HTML5
     Platform: Ruby, Jekyll, Github Pages
